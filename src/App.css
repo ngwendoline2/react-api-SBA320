@@ -1,0 +1,95 @@
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting up a basic layout */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling the Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Styling the Welcome component */
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styling the About component */
+.about {
+  padding: 20px;
+}
+
+/* Styling the Search component */
+.search {
+  margin-top: 20px;
+}
+
+/* Styling the Search input */
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling the Search button */
+.search button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056B3;
+}
+
+/* Styling the Search results */
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  margin-bottom: 10px;
+}
