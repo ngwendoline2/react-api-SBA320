@@ -1,24 +1,26 @@
+import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Welcome from './components/Welcome';
 import About from './components/About';
-import Search from './components/Search';
-import Navbar from './components/Navbar'; // Import the Navbar component
-import './App.css';
+import Navbar from './components/Navbar';
+import ChicagoData from './components/ChicagoData';
+import Welcome from './components/Welcome';
+import NotFound from './components/NotFound'; // Make sure this import is correct
 
 function App() {
-
   return (
     <Router>
       <div className="App">
-        <Navbar /> {/* Including the Navbar component */}
+        <Navbar />
         <Routes>
+          <Route path="/" element={<Welcome />} />
           <Route path="/about" element={<About />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/chicago-data" element={<ChicagoData />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
   );
 }
+
 export default App;
